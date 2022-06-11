@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: arial;
+    min-height: 100vh;
+    background: rgb(159,82,178);
+background: radial-gradient(circle, rgba(159,82,178,1) 32%, rgba(63,94,251,1) 67%, rgba(252,70,107,1) 85%);
+/* background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(188,235,238,1) 13%, rgba(0,237,247,1) 26%, rgba(63,149,251,1) 39%, rgba(70,140,252,1) 52%, rgba(45,0,255,1) 63%, rgba(0,64,255,1) 70%, rgba(12,0,255,1) 81%, rgba(12,0,242,1) 87%, rgba(3,2,2,1) 100%); */
+}
+
+.cart {
+    position: relative;
+    border-radius: 20px;
+    height: 190px;
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 35px 80px black;
+    transition: 0.5s;
+}
+
+.cart:hover {
+    height: 450px;
+}
+
+.cart__img {
+    position: absolute;
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    transform: translateX(-50%);
+    left: 50%;
+    top: -50px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cart:hover .cart__img {
+    width: 250px;
+    height: 250px;
+}
+
+.detail {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(90px);
+}
+
+.cart:hover .detail {
+    transform: translateY(170px);
+}
+
+.detail h1 {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.detail h2 {
+    font-size: 1em;
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: rgb(71, 71, 71);
+    overflow: hidden;
+}
+
+.cart .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background: linear-gradient(90deg, #020024 0%, #003cff 0%, #00d4ff 100%);
+    color: #fff;
+    border-radius: 9px;
+}
+
+.btn:last-child {
+    background: linear-gradient(90deg, #003cff 0%, #020024 100%, #00d4ff 100%);
+}
